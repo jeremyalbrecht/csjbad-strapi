@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "vie_du_clubs",
+  "info": {
+    "singularName": "vie-du-club",
+    "pluralName": "vie-du-clubs",
+    "displayName": "Vie Du Club"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "events": {
+      "type": "component",
+      "repeatable": true,
+      "component": "events.evenements"
+    }
+  }
+}

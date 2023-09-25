@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_license_licences",
+  "info": {
+    "displayName": "Licence",
+    "icon": "file"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "price": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    }
+  }
+}

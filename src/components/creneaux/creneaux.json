@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_creneaux_creneaux",
+  "info": {
+    "displayName": "Créneaux",
+    "icon": "priceTag"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "day": {
+      "type": "enumeration",
+      "enum": [
+        "Lundi",
+        "Mardi",
+        "Mercredi",
+        "Jeudi",
+        "Vendredi",
+        "Samedi",
+        "Dimanche"
+      ]
+    },
+    "color": {
+      "type": "enumeration",
+      "enum": [
+        "Bleu",
+        "Gris"
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "kind": "singleType",
+  "collectionName": "adultes",
+  "info": {
+    "singularName": "adulte",
+    "pluralName": "adultes",
+    "displayName": "Adulte",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "creneaux": {
+      "type": "component",
+      "repeatable": true,
+      "component": "creneaux.creneaux"
+    },
+    "tarifs": {
+      "type": "richtext"
+    },
+    "files": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    },
+    "button_title": {
+      "type": "string"
+    },
+    "button_action": {
+      "type": "string"
+    },
+    "license": {
+      "type": "component",
+      "repeatable": true,
+      "component": "license.licence"
+    }
+  }
+}

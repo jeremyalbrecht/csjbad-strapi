@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "clubs",
+  "info": {
+    "singularName": "club",
+    "pluralName": "clubs",
+    "displayName": "Club"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "articles": {
+      "type": "component",
+      "repeatable": true,
+      "component": "articles.articles"
+    }
+  }
+}
