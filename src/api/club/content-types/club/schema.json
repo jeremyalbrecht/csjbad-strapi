@@ -4,7 +4,8 @@
   "info": {
     "singularName": "club",
     "pluralName": "clubs",
-    "displayName": "Club"
+    "displayName": "Club",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -15,6 +16,11 @@
       "type": "component",
       "repeatable": true,
       "component": "articles.articles"
+    },
+    "comiteeMembers": {
+      "type": "component",
+      "repeatable": true,
+      "component": "comitee-member.membre"
     }
   }
 }

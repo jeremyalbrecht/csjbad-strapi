@@ -28,6 +28,14 @@
     },
     "button_url": {
       "type": "string"
+    },
+    "showImageOnMobile": {
+      "type": "boolean",
+      "default": true
+    },
+    "openNewTab": {
+      "type": "boolean",
+      "default": true
     }
   }
 }

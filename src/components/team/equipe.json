@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_team_equipes",
+  "info": {
+    "displayName": "Équipe",
+    "icon": "rocket"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "ranking": {
+      "type": "string"
+    },
+    "rankingColor": {
+      "type": "enumeration",
+      "enum": [
+        "red",
+        "blue",
+        "green"
+      ]
+    }
+  }
+}

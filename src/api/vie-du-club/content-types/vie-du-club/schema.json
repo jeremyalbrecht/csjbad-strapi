@@ -4,7 +4,8 @@
   "info": {
     "singularName": "vie-du-club",
     "pluralName": "vie-du-clubs",
-    "displayName": "Vie Du Club"
+    "displayName": "Vie Du Club",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -15,6 +16,11 @@
       "type": "component",
       "repeatable": true,
       "component": "events.evenements"
+    },
+    "teams": {
+      "type": "component",
+      "repeatable": true,
+      "component": "team.equipe"
     }
   }
 }
