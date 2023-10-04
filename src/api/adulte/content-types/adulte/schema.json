@@ -4,7 +4,7 @@
   "info": {
     "singularName": "adulte",
     "pluralName": "adultes",
-    "displayName": "Adulte",
+    "displayName": "Inscription",
     "description": ""
   },
   "options": {
@@ -39,6 +39,11 @@
       "type": "component",
       "repeatable": true,
       "component": "license.licence"
+    },
+    "trainers": {
+      "type": "component",
+      "repeatable": true,
+      "component": "comitee-member.membre"
     }
   }
 }

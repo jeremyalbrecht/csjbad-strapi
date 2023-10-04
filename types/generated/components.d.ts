@@ -81,13 +81,14 @@ export interface TeamEquipe extends Schema.Component {
   info: {
     displayName: '\u00C9quipe';
     icon: 'rocket';
+    description: '';
   };
   attributes: {
-    name: Attribute.String;
     image: Attribute.Media;
-    description: Attribute.RichText;
     ranking: Attribute.String;
-    rankingColor: Attribute.Enumeration<['red', 'blue', 'green']>;
+    color: Attribute.Enumeration<['blue', 'grey']> &
+      Attribute.DefaultTo<'blue'>;
+    major: Attribute.Boolean;
   };
 }
 

@@ -2,33 +2,32 @@
   "collectionName": "components_team_equipes",
   "info": {
     "displayName": "Équipe",
-    "icon": "rocket"
+    "icon": "rocket",
+    "description": ""
   },
   "options": {},
   "attributes": {
-    "name": {
-      "type": "string"
-    },
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
-    },
-    "description": {
-      "type": "richtext"
+      ]
     },
     "ranking": {
       "type": "string"
     },
-    "rankingColor": {
+    "color": {
       "type": "enumeration",
       "enum": [
-        "red",
         "blue",
-        "green"
-      ]
+        "grey"
+      ],
+      "default": "blue"
+    },
+    "major": {
+      "type": "boolean"
     }
   }
 }

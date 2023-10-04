@@ -682,7 +682,7 @@ export interface ApiAdulteAdulte extends Schema.SingleType {
   info: {
     singularName: 'adulte';
     pluralName: 'adultes';
-    displayName: 'Adulte';
+    displayName: 'Inscription';
     description: '';
   };
   options: {
@@ -695,6 +695,7 @@ export interface ApiAdulteAdulte extends Schema.SingleType {
     button_title: Attribute.String;
     button_action: Attribute.String;
     license: Attribute.Component<'license.licence', true>;
+    trainers: Attribute.Component<'comitee-member.membre', true>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
