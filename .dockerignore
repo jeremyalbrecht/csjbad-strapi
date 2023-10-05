@@ -10,6 +10,12 @@ Icon
 .Trashes
 ._*
 
+.dockerignore
+.editorconfig
+.env.example
+.gitignore
+.github
+.git
 
 ############################
 # Linux
