@@ -12,13 +12,10 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "articles": {
+    "sections": {
       "type": "component",
       "repeatable": true,
-      "component": "articles.articles"
-    },
-    "title": {
-      "type": "string"
+      "component": "section.section"
     }
   }
 }

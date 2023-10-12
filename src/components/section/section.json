@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_section_sections",
+  "info": {
+    "displayName": "Section",
+    "icon": "collapse"
+  },
+  "options": {},
+  "attributes": {
+    "articles": {
+      "type": "component",
+      "repeatable": true,
+      "component": "articles.articles"
+    },
+    "title": {
+      "type": "string"
+    }
+  }
+}

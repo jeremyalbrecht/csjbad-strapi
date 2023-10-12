@@ -18,6 +18,21 @@ export interface ArticlesArticles extends Schema.Component {
   };
 }
 
+export interface ArticlesStep extends Schema.Component {
+  collectionName: 'components_articles_steps';
+  info: {
+    displayName: 'Step';
+    icon: 'check';
+  };
+  attributes: {
+    description: Attribute.RichText & Attribute.Required;
+    icon: Attribute.RichText;
+    button_action: Attribute.String;
+    button_title: Attribute.String;
+    button_icon: Attribute.Enumeration<['download', 'link']>;
+  };
+}
+
 export interface ComiteeMemberMembre extends Schema.Component {
   collectionName: 'components_comitee_member_membres';
   info: {
@@ -76,6 +91,18 @@ export interface LicenseLicence extends Schema.Component {
   };
 }
 
+export interface SectionSection extends Schema.Component {
+  collectionName: 'components_section_sections';
+  info: {
+    displayName: 'Section';
+    icon: 'collapse';
+  };
+  attributes: {
+    articles: Attribute.Component<'articles.articles', true>;
+    title: Attribute.String;
+  };
+}
+
 export interface TeamEquipe extends Schema.Component {
   collectionName: 'components_team_equipes';
   info: {
@@ -96,10 +123,12 @@ declare module '@strapi/types' {
   export module Shared {
     export interface Components {
       'articles.articles': ArticlesArticles;
+      'articles.step': ArticlesStep;
       'comitee-member.membre': ComiteeMemberMembre;
       'creneaux.creneaux': CreneauxCreneaux;
       'events.evenements': EventsEvenements;
       'license.licence': LicenseLicence;
+      'section.section': SectionSection;
       'team.equipe': TeamEquipe;
     }
   }

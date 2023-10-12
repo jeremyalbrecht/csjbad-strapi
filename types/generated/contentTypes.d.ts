@@ -696,6 +696,7 @@ export interface ApiAdulteAdulte extends Schema.SingleType {
     button_action: Attribute.String;
     license: Attribute.Component<'license.licence', true>;
     trainers: Attribute.Component<'comitee-member.membre', true>;
+    steps: Attribute.Component<'articles.step', true>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -782,8 +783,7 @@ export interface ApiDoubleJeuDoubleJeu extends Schema.SingleType {
     draftAndPublish: true;
   };
   attributes: {
-    articles: Attribute.Component<'articles.articles', true>;
-    title: Attribute.String;
+    sections: Attribute.Component<'section.section', true>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
