@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_articles_steps",
+  "info": {
+    "displayName": "Step",
+    "icon": "check"
+  },
+  "options": {},
+  "attributes": {
+    "description": {
+      "type": "richtext",
+      "required": true
+    },
+    "icon": {
+      "type": "richtext"
+    },
+    "button_action": {
+      "type": "string"
+    },
+    "button_title": {
+      "type": "string"
+    },
+    "button_icon": {
+      "type": "enumeration",
+      "enum": [
+        "download",
+        "link"
+      ]
+    }
+  }
+}
