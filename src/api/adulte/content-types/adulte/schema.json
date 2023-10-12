@@ -44,6 +44,11 @@
       "type": "component",
       "repeatable": true,
       "component": "comitee-member.membre"
+    },
+    "steps": {
+      "type": "component",
+      "repeatable": true,
+      "component": "articles.step"
     }
   }
 }
