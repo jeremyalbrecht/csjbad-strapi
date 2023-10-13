@@ -819,6 +819,8 @@ export interface ApiHomePageHomePage extends Schema.SingleType {
     hero_description: Attribute.Text;
     events: Attribute.Component<'events.evenements', true>;
     articles: Attribute.Component<'articles.articles', true>;
+    hero_button: Attribute.String;
+    hero_action: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
