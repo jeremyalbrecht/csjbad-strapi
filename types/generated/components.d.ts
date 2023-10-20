@@ -18,6 +18,19 @@ export interface ArticlesArticles extends Schema.Component {
   };
 }
 
+export interface ArticlesItem extends Schema.Component {
+  collectionName: 'components_articles_items';
+  info: {
+    displayName: 'Item';
+    icon: 'shoppingCart';
+  };
+  attributes: {
+    title: Attribute.String & Attribute.Required;
+    image: Attribute.Media;
+    price: Attribute.String;
+  };
+}
+
 export interface ArticlesStep extends Schema.Component {
   collectionName: 'components_articles_steps';
   info: {
@@ -123,6 +136,7 @@ declare module '@strapi/types' {
   export module Shared {
     export interface Components {
       'articles.articles': ArticlesArticles;
+      'articles.item': ArticlesItem;
       'articles.step': ArticlesStep;
       'comitee-member.membre': ComiteeMemberMembre;
       'creneaux.creneaux': CreneauxCreneaux;
