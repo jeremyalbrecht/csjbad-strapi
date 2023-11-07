@@ -1,0 +1,20 @@
+version: "3.8"
+
+include:
+  - docker-compose/csjbad-strapi.yml
+  - docker-compose/csjbad-strapi-runner.yml
+
+
+networks:
+  web:
+    external: true
+    name: traefik_web
+  redis:
+    name: redis
+    external: true
+  mariadb:
+    name: mariadb
+    external: true
+  strapi:
+    name: strapi
+    external: true
