@@ -18,6 +18,12 @@
     "ranking": {
       "type": "string"
     },
+    "icbad_id": {
+      "type": "string"
+    },
+    "group": {
+      "type": "string"
+    },
     "color": {
       "type": "enumeration",
       "enum": [
@@ -28,6 +34,11 @@
     },
     "major": {
       "type": "boolean"
+    },
+    "leaderboard": {
+      "type": "component",
+      "repeatable": false,
+      "component": "leaderboard.leaderboard"
     }
   }
 }

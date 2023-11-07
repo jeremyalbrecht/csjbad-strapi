@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_leaderboard_leaderboards",
+  "info": {
+    "displayName": "Leaderboard",
+    "icon": "bold",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "competition_id": {
+      "type": "string"
+    },
+    "rows": {
+      "type": "component",
+      "repeatable": true,
+      "component": "team.row"
+    }
+  }
+}

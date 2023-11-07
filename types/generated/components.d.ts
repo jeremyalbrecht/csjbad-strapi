@@ -91,6 +91,19 @@ export interface EventsEvenements extends Schema.Component {
   };
 }
 
+export interface LeaderboardLeaderboard extends Schema.Component {
+  collectionName: 'components_leaderboard_leaderboards';
+  info: {
+    displayName: 'Leaderboard';
+    icon: 'bold';
+    description: '';
+  };
+  attributes: {
+    competition_id: Attribute.String;
+    rows: Attribute.Component<'team.row', true>;
+  };
+}
+
 export interface LicenseLicence extends Schema.Component {
   collectionName: 'components_license_licences';
   info: {
@@ -126,9 +139,27 @@ export interface TeamEquipe extends Schema.Component {
   attributes: {
     image: Attribute.Media;
     ranking: Attribute.String;
+    icbad_id: Attribute.String;
+    group: Attribute.String;
     color: Attribute.Enumeration<['blue', 'grey']> &
       Attribute.DefaultTo<'blue'>;
     major: Attribute.Boolean;
+    leaderboard: Attribute.Component<'leaderboard.leaderboard'>;
+  };
+}
+
+export interface TeamRow extends Schema.Component {
+  collectionName: 'components_team_rows';
+  info: {
+    displayName: 'Row';
+    icon: 'code';
+    description: '';
+  };
+  attributes: {
+    club: Attribute.String;
+    won: Attribute.Integer & Attribute.Required;
+    lost: Attribute.Integer;
+    total: Attribute.Integer;
   };
 }
 
@@ -141,9 +172,11 @@ declare module '@strapi/types' {
       'comitee-member.membre': ComiteeMemberMembre;
       'creneaux.creneaux': CreneauxCreneaux;
       'events.evenements': EventsEvenements;
+      'leaderboard.leaderboard': LeaderboardLeaderboard;
       'license.licence': LicenseLicence;
       'section.section': SectionSection;
       'team.equipe': TeamEquipe;
+      'team.row': TeamRow;
     }
   }
 }
