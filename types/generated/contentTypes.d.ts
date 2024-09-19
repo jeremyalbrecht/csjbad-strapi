@@ -839,6 +839,36 @@ export interface ApiHomePageHomePage extends Schema.SingleType {
   };
 }
 
+export interface ApiSeasonSeason extends Schema.CollectionType {
+  collectionName: 'seasons';
+  info: {
+    singularName: 'season';
+    pluralName: 'seasons';
+    displayName: 'Saison';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    name: Attribute.String;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::season.season',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::season.season',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 export interface ApiShopShop extends Schema.SingleType {
   collectionName: 'shops';
   info: {
@@ -946,6 +976,7 @@ declare module '@strapi/types' {
       'api::contact.contact': ApiContactContact;
       'api::double-jeu.double-jeu': ApiDoubleJeuDoubleJeu;
       'api::home-page.home-page': ApiHomePageHomePage;
+      'api::season.season': ApiSeasonSeason;
       'api::shop.shop': ApiShopShop;
       'api::sponsor.sponsor': ApiSponsorSponsor;
       'api::vie-du-club.vie-du-club': ApiVieDuClubVieDuClub;

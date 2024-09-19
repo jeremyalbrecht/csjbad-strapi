@@ -2,8 +2,6 @@ version: "3.8"
 
 include:
   - docker-compose/csjbad-strapi.yml
-  - docker-compose/csjbad-strapi-runner.yml
-
 
 networks:
   web:

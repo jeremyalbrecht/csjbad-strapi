@@ -1,8 +1,8 @@
 {
   "name": "csjbad-strapi",
   "private": true,
-  "version": "0.1.0",
-  "description": "A Strapi application",
+  "version": "1.1.0",
+  "description": "Backend for Augny Badminton website",
   "scripts": {
     "develop": "strapi develop",
     "start": "strapi start",
@@ -10,16 +10,16 @@
     "strapi": "strapi"
   },
   "dependencies": {
-    "@strapi/plugin-graphql": "^4.14.2",
-    "@strapi/plugin-i18n": "4.14.2",
-    "@strapi/plugin-users-permissions": "4.14.2",
-    "@strapi/provider-email-nodemailer": "^4.14.2",
-    "@strapi/provider-upload-aws-s3": "^4.14.2",
-    "@strapi/strapi": "4.14.2",
+    "@strapi/plugin-graphql": "^4.15.0",
+    "@strapi/plugin-i18n": "4.15.0",
+    "@strapi/plugin-users-permissions": "4.15.0",
+    "@strapi/provider-email-nodemailer": "^4.15.0",
+    "@strapi/provider-upload-aws-s3": "^4.15.0",
+    "@strapi/strapi": "4.15.0",
     "mysql": "^2.18.1"
   },
   "author": {
-    "name": "A Strapi developer"
+    "name": "Jérémy Albrecht"
   },
   "strapi": {
     "uuid": "d8deb39d-b671-4900-b3ca-c35de83e135d"

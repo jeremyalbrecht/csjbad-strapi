@@ -117,6 +117,17 @@ export interface LicenseLicence extends Schema.Component {
   };
 }
 
+export interface SaisonSaison extends Schema.Component {
+  collectionName: 'components_saison_saisons';
+  info: {
+    displayName: 'Saison';
+    icon: 'briefcase';
+  };
+  attributes: {
+    name: Attribute.String;
+  };
+}
+
 export interface SectionSection extends Schema.Component {
   collectionName: 'components_section_sections';
   info: {
@@ -145,6 +156,7 @@ export interface TeamEquipe extends Schema.Component {
       Attribute.DefaultTo<'blue'>;
     major: Attribute.Boolean;
     leaderboard: Attribute.Component<'leaderboard.leaderboard'>;
+    season: Attribute.Relation<'team.equipe', 'oneToOne', 'api::season.season'>;
   };
 }
 
@@ -174,6 +186,7 @@ declare module '@strapi/types' {
       'events.evenements': EventsEvenements;
       'leaderboard.leaderboard': LeaderboardLeaderboard;
       'license.licence': LicenseLicence;
+      'saison.saison': SaisonSaison;
       'section.section': SectionSection;
       'team.equipe': TeamEquipe;
       'team.row': TeamRow;

@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_saison_saisons",
+  "info": {
+    "displayName": "Saison",
+    "icon": "briefcase"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    }
+  }
+}
