@@ -845,12 +845,14 @@ export interface ApiSeasonSeason extends Schema.CollectionType {
     singularName: 'season';
     pluralName: 'seasons';
     displayName: 'Saison';
+    description: '';
   };
   options: {
     draftAndPublish: true;
   };
   attributes: {
     name: Attribute.String;
+    default: Attribute.Boolean & Attribute.DefaultTo<false>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

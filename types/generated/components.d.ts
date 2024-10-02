@@ -149,6 +149,7 @@ export interface TeamEquipe extends Schema.Component {
   };
   attributes: {
     image: Attribute.Media;
+    images: Attribute.Media;
     ranking: Attribute.String;
     icbad_id: Attribute.String;
     group: Attribute.String;

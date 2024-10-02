@@ -15,6 +15,13 @@
         "images"
       ]
     },
+    "images": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true
+    },
     "ranking": {
       "type": "string"
     },
