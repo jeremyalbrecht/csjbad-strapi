@@ -24,7 +24,8 @@ export default ({ env }) => ({
         accessKeyId: env('AWS_ACCESS_KEY_ID'),
         secretAccessKey: env('AWS_ACCESS_SECRET'),
         endpoint: env("AWS_ENDPOINT"),
-        s3ForcePathStyle: false,
+        region: env("AWS_REGION"),
+        baseUrl: `https://${env("AWS_BUCKET")}.${env("AWS_ENDPOINT")}`,
         params: {
           ACL: env('AWS_ACL', 'public-read'), // 'private' if you want to make the uploaded files private
           Bucket: env('AWS_BUCKET'),
