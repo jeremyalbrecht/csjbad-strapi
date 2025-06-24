@@ -19,3 +19,4 @@ jobs:
         with:
           push: true
           tags: jeremyalbrecht/csjbad-strapi:latest
+          platforms: linux/arm64
