@@ -16,7 +16,7 @@
     "@strapi/provider-email-nodemailer": "^4.15.0",
     "@strapi/provider-upload-aws-s3": "^4.15.0",
     "@strapi/strapi": "4.15.0",
-    "mysql": "^2.18.1"
+    "pg": "^8.16.2"
   },
   "author": {
     "name": "Jérémy Albrecht"
