@@ -17,17 +17,25 @@ export default ({ env }) => ({
       },
     },
   },
+  graphql: {
+    config: {
+      v4CompatibilityMode: false
+    }
+  },
   upload: {
     config: {
       provider: 'aws-s3', // For community providers pass the full package name (e.g. provider: 'strapi-provider-upload-google-cloud-storage')
       providerOptions: {
-        accessKeyId: env('AWS_ACCESS_KEY_ID'),
-        secretAccessKey: env('AWS_ACCESS_SECRET'),
-        endpoint: env("AWS_ENDPOINT"),
-        region: env("AWS_REGION"),
-        params: {
-          ACL: env('AWS_ACL', 'public-read'), // 'private' if you want to make the uploaded files private
-          Bucket: env('AWS_BUCKET'),
+        s3Options: {
+          credentials: {
+            accessKeyId: env('SCALEWAY_ACCESS_KEY_ID'),
+            secretAccessKey: env('SCALEWAY_ACCESS_SECRET'),
+          },
+          region: env('SCALEWAY_REGION'), // e.g "fr-par"
+          endpoint: env('SCALEWAY_ENDPOINT'), // e.g. "https://s3.fr-par.scw.cloud"
+          params: {
+            Bucket: env('SCALEWAY_BUCKET'),
+          },
         },
       },
     },
