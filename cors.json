@@ -1,0 +1,11 @@
+{
+  "CORSRules": [
+    {
+      "AllowedOrigins": ["https://api.augny-badminton.fr", "https://augny-badminton.fr"],
+      "AllowedHeaders": ["*"],
+      "AllowedMethods": ["GET"],
+      "MaxAgeSeconds": 3000,
+      "ExposeHeaders": []
+    }
+  ]
+}
